@@ -58,7 +58,7 @@ function show_description()
 function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
-	printf "sudo apt-get -y install ${PKG_BASE[*]}"
+	sudo apt-get -y install ${PKG_BASE[*]}
 	setup_system
 	exit
 	
@@ -114,8 +114,7 @@ function version()
 }
 
 
-function main()
-{
+# Main
 case $1 in
 	-i | --install)
 		check_install
@@ -132,6 +131,3 @@ case $1 in
 		help
 		exit 0
 esac
-}
-
-main
