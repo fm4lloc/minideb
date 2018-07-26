@@ -12,7 +12,8 @@ A única coisa que vamos precisar é dos "últiliários standart de sistema"
 > **Modo de usar**
 
 ```
-# sudo apt-get install sudo
+# su
+# apt-get install sudo
 # aduser YOUR_USER $user sudo
 # halt -r now
 ```
