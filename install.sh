@@ -17,7 +17,7 @@ declare -r normal=$(tput sgr0)
 declare -r prog_name="MiniDeb"
 declare -r prog_vesion="0.23.7" #AAAA/MM/DD
 
-declare -r debian_version="9.2"
+declare -r debian_version="9.5"
 
 # Base package
 declare -a _pkg_base=(xorg slim openbox obconf thunar 
@@ -95,9 +95,9 @@ function setup_system()
 
 function check_install()
 {
-		if [[ !$DEBIAN_VERSION =~ ^`cat /etc/debian_version`$ ]]; then
-			printf "${red}\n%s\n${normal}" "[WARNING] This script was only tested on version $DEBIAN_VERSION of debian."
-		fi
+	if [[ !$DEBIAN_VERSION =~ ^`cat /etc/debian_version`$ ]]; then
+		printf "${red}\n%s\n${normal}" "[WARNING] This script was only tested on version $DEBIAN_VERSION of debian."
+	fi
 		printf "${red}\n%s\n${normal}" "Proceed with the installation? [N/y]"
         read -n 1 -r
         if [[ $REPLY =~ ^[Yy]$ ]]; then
