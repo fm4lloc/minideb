@@ -72,9 +72,7 @@ function install_packpages()
 function setup_system()
 {
 	printf "\n${red}\n%s\n${normal}" "Downloading Halo icons:"
-	mkdir ~/.icons && cd ~/.icons
-	git clone https://github.com/Ampiflow/Halo
-	cd -
+	git clone https://github.com/Ampiflow/Halo ~/.icons/Halo
 	
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
 	cp -avr ./tint2 ~/.config
