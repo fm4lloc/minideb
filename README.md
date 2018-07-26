@@ -1,5 +1,5 @@
 
-**Minideb**
+**Minideb** :octocat:
 
 Este Script automatiza a pós-instalação do Debian, instalando e configurando um sistema limpo e minimalista;
 
@@ -8,6 +8,8 @@ Atualmente testado no Debian 9.5, mas a cada nova atuaização o script será at
 Para usar o script você deve instalar uma versão limpa do Debian, usando
 uma .iso netinstall de preferência, dispensando a instalação de sofwatres pré-definidos como o  "debian desktop enviroment".
 A única coisa que vamos precisar é dos "utilitários standart de sistema"
+
+<img src=https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-111629_1920x1080_scrot.jpg>
 
 > **Modo de usar**
 
