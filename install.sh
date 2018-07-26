@@ -58,7 +58,7 @@ function show_description()
 function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
-	sudo apt-get -y install ${PKG_BASE[*]}
+	sudo apt-get -y install ${pkg_base[*]}
 	setup_system
 	exit
 	
