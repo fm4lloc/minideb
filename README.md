@@ -20,6 +20,7 @@ A única coisa que vamos precisar é dos "últiliários standart de sistema"
 > **Depois de adiciona o seu usuário ao grupo sudo e reiniciar o sistema execute os seguintes comados.**
 
 ```
+$ sudo apt-get install git
 $ cd ~
 $ git clone https://github.com/fm4lloc/minideb
 $ cd minideb
