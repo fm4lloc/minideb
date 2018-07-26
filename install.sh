@@ -59,8 +59,10 @@ function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
 	sudo apt-get -y install ${pkg_base[*]}
+	# BUGFIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
+	sudo apt-get --purge remove libgarcon-common
 	setup_system
-	exit
+	exit 0
 	
 }
 
