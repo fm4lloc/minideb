@@ -45,15 +45,9 @@ use_spacer none
 
 TEXT
 ${color2}CPU1:   ${color3}${cpu cpu1}% \
-#${color2}CPU2:   ${color3}${cpu cpu2}% \
-#${color2}CPU1:   ${color3}${cpu cpu2}% \
-#${color2}CPU4:   ${color3}${cpu cpu4}% \
-#${color2}CPU5:   ${color3}${cpu cpu5}% \
-#${color2}CPU6:   ${color3}${cpu cpu6}% \
-#${color2}CPU7:   ${color3}${cpu cpu7}% \
-#${color2}CPU8:   ${color3}${cpu cpu8}% ${color5} | \
+#${color2}CPU2:   ${color3}${cpu cpu2}% ${color5} | \
 ${color2}Ram:    ${color3}${mem}/${memmax} ${color5} | \
-${color2}Swap:   ${color3}${swapperc}% ${color5} | \
+#${color2}Swap:   ${color3}${swapperc}% ${color5} | \
 ${color2}Home:   ${color3}${fs_free_perc /home}% ${color4}free ${color5} | \
 ${color2}Root:   ${color3}${fs_free_perc /root}% ${color4}free ${color5} | \
 ${color2}enp4s0: ${color4}DOWN ${color3}${downspeed enp4s0} ${color4}UP ${color3}${upspeed enp4s0} ${color5} | \
