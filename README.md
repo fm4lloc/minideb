@@ -1,18 +1,16 @@
 
 **Minideb** :octocat:
 
-Este Script automatiza a pós-instalação do Debian, instalando e configurando um sistema limpo e minimalista;
+Este Script automatiza a pós-instalação do Debian, implementando um sistema limpo e minimalista com o openbox;
 
-Atualmente testado no Debian 9.5, mas a cada nova atuaização o script será atualizado com as mudanças necessárias.
+Atualmente testado no Debian 9.5, mas a cada nova atualização o script passara por mudanças necessárias.
 
-Para usar o script você deve instalar uma versão limpa do Debian, usando
-uma .iso netinstall de preferência, dispensando a instalação de sofwatres pré-definidos como o  "debian desktop enviroment".
-A única coisa que vamos precisar é dos "utilitários de sistema padrão"
+Para usar o script você deve instalar uma versão limpa do Debian, preferencialmente usando uma .iso netinstall, além de dispensar a instalação de sofwatres pré-definidos como qualquer ambiente de Área de Trabalho. A única coisa que vamos precisar será os "utilitários de sistema padrão"
 <img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-120025_1920x1080_scrot.jpg"/>
 
 > **Modo de usar**
 
-Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo as linhas abaixo, lebrando de substituir a *YOUR_USER* pelo nome do ultilizador.
+Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo as linhas abaixo, lembrando de substituir *YOUR_USER* pelo nome do ultilizador do sistema.
 
 ```
 # su
@@ -21,7 +19,6 @@ Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo a
 # halt --r now
 ```
 > **Depois de adicionar o seu usuário ao grupo reinicie o sistema execute os seguintes comados:**
-
 ```
 $ cd ~
 $ sudo apt-get install git
