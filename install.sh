@@ -20,7 +20,7 @@ declare -r prog_vesion="0.23.7" #AAAA/MM/DD
 declare -r debian_version="9.5"
 
 # Base package
-declare -a _pkg_base=(xorg slim openbox obconf thunar 
+declare -a pkg_base=(xorg slim openbox obconf thunar 
 thunar-archive-plugin obmenu openbox-menu tint2
 trayer wicd-gtk nitrogen lxappearance gtk2-engines
 obsession conky sakura mirage gmrun scrot brasero
@@ -31,10 +31,10 @@ gtk2-engines-murrine gnome-themes-standard hardinfo
 ntfs-config)
 
 # Extra Packpage
-#declare -a PKG_LIBREOFFICE=(libreoffice libreoffice-l10n-pt-br libreoffice-gtk3)
-#declare -a PKG_THUNDERBIRD=(thunderbird thunderbird-l10n-pt-br)
-#declare -a PKG_FIREFOX=(firefox-esr firefox-esr-l10n-pt-br)
-#declare -a PKG_BUILD_NVIDIA=(build-essential linux-headers-$(uname -r) module-assistant)
+#declare -a pkg_libreoffice=(libreoffice libreoffice-l10n-pt-br libreoffice-gtk3)
+#declare -a pkg_thunderbird=(thunderbird thunderbird-l10n-pt-br)
+#declare -a pkg_firefox=(firefox-esr firefox-esr-l10n-pt-br)
+#declare -a pkg_build_nvidia=(build-essential linux-headers-$(uname -r) module-assistant)
 
 function help()
 {
