@@ -9,8 +9,6 @@ Para usar o script você deve instalar uma versão limpa do Debian, usando
 uma .iso netinstall de preferência, dispensando a instalação de sofwatres pré-definidos como o  "debian desktop enviroment".
 A única coisa que vamos precisar é dos "utilitários standart de sistema"
 
-<img src=https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-111629_1920x1080_scrot.jpg target="_blank">
-
 > **Modo de usar**
 
 Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo as linhas abaixo, lebrando de substituir a YOUR_USER pelo nome do ultilizador.
