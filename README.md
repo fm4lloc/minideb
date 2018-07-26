@@ -11,7 +11,7 @@ A única coisa que vamos precisar é dos "últiliários standart de sistema"
 
 > **Modo de usar**
 
-Antes de iniciar os trabalhos adicione o seu usuário ao grupo sudo seguindo essas linhas abaixo:
+Antes de iniciar os trabalhos adicione o seu usuário ao grupo sudo seguindo as linhas abaixo, lebrando de substituir a YOUR_USER pelo seu nome.
 
 ```
 # su
