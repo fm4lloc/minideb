@@ -21,7 +21,7 @@ declare -r debian_version="9.5"
 
 # Base package
 declare -a pkg_base=(xorg slim openbox obconf thunar 
-thunar-archive-plugin obmenu openbox-menu tint2
+thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
 trayer wicd-gtk nitrogen lxappearance gtk2-engines
 obsession conky sakura mirage gmrun scrot brasero
 galculator transmission-gtk audacious inkscape gimp
@@ -59,8 +59,11 @@ function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
 	sudo apt-get -y install ${pkg_base[*]}
+	
 	# BUGFIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
-	sudo apt-get --purge remove libgarcon-common
+	sudo apt-get -y --purge remove libgarcon-common
+	sudo apt-get -y --purge autoremove
+	
 	setup_system
 	exit 0
 	
