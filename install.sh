@@ -68,7 +68,7 @@ function setup_system()
 {
 	printf "\n${red}\n%s\n${normal}" "Downloading Halo icons:"
 	git clone https://github.com/Ampiflow/Halo
-	cp -avr ./tint2 ~/.icons
+	cp -avr ./Halo ~/.icons
 	
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
 	cp -avr ./tint2 ~/.config
