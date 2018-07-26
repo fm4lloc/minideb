@@ -81,8 +81,8 @@ function setup_system()
 	cp -avr ./geany ~/.config/
 	cp -avr ./Wallpapers ~/
 	
-	sed -i s/YOURUSER/$(whoami)/g ./nitrogen/bg-saved.cfg
-	sed -i s/YOURUSER/$(whoami)/g ./nitrogen/nitrogen.cfg
+	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/bg-saved.cfg
+	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/nitrogen.cfg
 	cp -avr ./nitrogen ~/.config
 	
 	cp -avr ./.conkyrc ~/
