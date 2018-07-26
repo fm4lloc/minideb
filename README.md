@@ -10,6 +10,7 @@ uma .iso netinstall de preferência, dispensando a instalação de sofwatres pr�
 A única coisa que vamos precisar é dos "últiliários standart de sistema"
 
 > **Modo de usar**
+Antes de iniciar os trabalhos adicione o seu usuário ao grupo sudo seguindo essas linhas abaixo:
 
 ```
 # su
