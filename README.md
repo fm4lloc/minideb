@@ -19,7 +19,7 @@ Antes de iniciar os trabalhos adicione o seu usuário ao grupo sudo seguindo ess
 # aduser YOUR_USER $user sudo
 # reboot
 ```
-> **Depois de adiciona o seu usuário ao grupo sudo e reiniciar o sistema execute os seguintes comados.**
+> **Depois de adicionar o seu usuário ao grupo sudo e reiniciar o sistema execute os seguintes comados:**
 
 ```
 $ cd ~
