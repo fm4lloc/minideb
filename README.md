@@ -1,5 +1,5 @@
 
-Minideb
+**Minideb**
 
 Este Script automatiza a pós-instalação do Debian, instalando e configurando um sistema limpo e minimalista;
 
