@@ -86,7 +86,6 @@ function setup_system()
 	
 	cp -avr ./.conkyrc ~/
 	cp -avr ./.gtkrc-2.0 ~/
-	cp -avr ./.fonts.conf ~/
 	cp -avrb ./.bashrc ~/
 	
 	printf "${red}\n%s\n${normal}" "Applying resolution improvement on LED / LCD screens:"
