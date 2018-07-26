@@ -28,5 +28,5 @@ $ sudo apt-get install git
 $ git clone https://github.com/fm4lloc/minideb
 $ cd minideb
 $ chmod +x ./install.sh
-$ sudo ./install -i
+$ ./install -i
 ```
