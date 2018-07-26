@@ -61,8 +61,8 @@ function install_packpages()
 	sudo apt-get -y install ${pkg_base[*]}
 	
 	# BUGFIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
-	sudo apt-get -y --purge remove libgarcon-common
-	sudo apt-get -y --purge autoremove
+	#sudo apt-get -y --purge remove libgarcon-common
+	#sudo apt-get -y --purge autoremove
 	
 	setup_system
 	exit 0
@@ -72,8 +72,9 @@ function install_packpages()
 function setup_system()
 {
 	printf "\n${red}\n%s\n${normal}" "Downloading Halo icons:"
+	mkdir ~./icons && cd ~./icons
 	git clone https://github.com/Ampiflow/Halo
-	cp -avr ./Halo ~/.icons
+	cd ~
 	
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
 	cp -avr ./tint2 ~/.config
