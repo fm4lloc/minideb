@@ -39,10 +39,10 @@ ntfs-config)
 function help()
 {
     version
-	printf "\n%s\n" \
-	"-i | --install - install packpages e copy config files."	   \
-	"-d | --description - show description of installed packages." \
-	"Example for install:"										   \
+	printf "\n%s\n"\
+	"-i | --install - install packpages e copy config files."\
+	"-d | --description - show description of installed packages."\
+	"Example for install:"\
 	"Try $0 -i or $0 --install"
 }
 
@@ -76,8 +76,8 @@ function setup_system()
 	cp -avr ./geany ~/.config/
 	cp -avr ./Wallpapers ~/
 	
-	sed -i s/_YOURUSER_/$(whoami)/g ./nitrogen/bg-saved.cfg
-	sed -i s/_YOURUSER_/$(whoami)/g ./nitrogen/nitrogen.cfg
+	sed -i s/YOURUSER/$(whoami)/g ./nitrogen/bg-saved.cfg
+	sed -i s/YOURUSER/$(whoami)/g ./nitrogen/nitrogen.cfg
 	cp -avr ./nitrogen ~/.config
 	
 	cp -avr ./.conkyrc ~/
