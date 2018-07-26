@@ -1,0 +1,75 @@
+# conkyrc (fm4lloc)
+
+#avoid flicker
+double_buffer yes
+
+#own window to run simultanious 2 or more conkys
+own_window  yes
+own_window_transparent true
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+# Contour
+draw_outline no
+
+# Shades
+draw_shades no
+default_shade_color 000000
+
+# Position
+gap_y 10
+gap_x 10
+
+# Alignment
+alignment top_left
+# alignment botton_left
+
+# Interval
+update_interval 2
+
+# Colors
+default_color FFFFFF
+color1 1793D1
+color2 535353
+color3 FFFFFF
+color4 D9D9D9
+color5 000000
+
+# Font
+use_xft yes
+xftfont :pixelsize=12
+
+# to prevent window from moving
+use_spacer none
+#minimum_size 1920 1080
+
+TEXT
+${color2}CPU1:   ${color3}${cpu cpu1}% \
+${color2}CPU2:   ${color3}${cpu cpu2}% \
+${color2}CPU1:   ${color3}${cpu cpu2}% \
+${color2}CPU4:   ${color3}${cpu cpu4}% \
+${color2}CPU5:   ${color3}${cpu cpu5}% \
+${color2}CPU6:   ${color3}${cpu cpu6}% \
+${color2}CPU7:   ${color3}${cpu cpu7}% \
+${color2}CPU8:   ${color3}${cpu cpu8}% ${color5} | \
+${color2}Ram:    ${color3}${mem}/${memmax} ${color5} | \
+${color2}Swap:   ${color3}${swapperc}% ${color5} | \
+${color2}Home:   ${color3}${fs_free_perc /home}% ${color4}free ${color5} | \
+${color2}Root:   ${color3}${fs_free_perc /root}% ${color4}free ${color5} | \
+${color2}enp4s0: ${color4}DOWN ${color3}${downspeed enp4s0} ${color4}UP ${color3}${upspeed enp4s0} ${color5} | \
+${color2}Uptime: ${color3}${uptime}${color5} | \
+${color2}Top:    ${color3} ${top name 1}${top cpu 1}${top mem 1}\
+
+
+${color2}GPUTEMP:${color3}${execi 2 nvidia-settings -query GPUCoreTemp | perl -ne 'print $1 if /GPUCoreTemp.*?debian:0\.0.*?: (\d+)./;'} Cº
+#hddtemp
+#${color2}${execi 300 nc 127.0.0.1 7634}
+${color2}/dev/sda ${diskiograph /dev/sda 8,100 ${color3} ${color2}} ${diskio /dev/sda} LINUX E Arquivos 3
+${color2}/dev/sdb ${diskiograph /dev/sdb 8,100 ${color3} ${color2}} ${diskio /dev/sdb} WINDOWS
+${color2}/dev/sdc ${diskiograph /dev/sdc 8,100 ${color3} ${color2}} ${diskio /dev/sdc} BACKUP
+
+#${color2}/dev/sde ${diskiograph /dev/sde 8,100 ${color3} ${color2}} ${diskio /dev/sde} PENDRIVE
+${color2}gateway IP: ${color3}${gw_ip}
+${color2}local IP: ${color3}${addr enp4s0}
+
+#${execi 2 sensors | perl -ne 'print $_'}
