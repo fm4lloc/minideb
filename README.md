@@ -15,7 +15,7 @@ A única coisa que vamos precisar é dos "últiliários standart de sistema"
 # su
 # apt-get install sudo
 # aduser YOUR_USER $user sudo
-# halt -r now
+# reboot
 ```
 > **Depois de adiciona o seu usuário ao grupo sudo e reiniciar o sistema execute os seguintes comados.**
 
