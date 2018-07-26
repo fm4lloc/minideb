@@ -17,7 +17,7 @@ Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo a
 ```
 # su
 # apt-get install sudo
-# aduser YOUR_USER $user sudo
+# aduser YOUR_USER sudo
 # halt -r now
 ```
 > **Depois de adicionar o seu usuário ao grupo reinicie o sistema execute os seguintes comados:**
