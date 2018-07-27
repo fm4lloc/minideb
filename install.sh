@@ -2,7 +2,7 @@
 
 # Automate a minimalist configuration for Debian 9.5
 #
-# Written by: Fernando Magalhães (fm4lloc) <fm4lloc@gmail.com>
+# Written by: Fernando Magalhães (fm4lloc) <fm4lloc(at)gmail(ot)com>
 #
 # This program is free software; you can REDistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -12,7 +12,6 @@
 
 declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
-
 
 declare -r prog_name="MiniDeb"
 declare -r prog_vesion="0.23.7" #AAAA/MM/DD
@@ -115,7 +114,6 @@ function version()
 {
     printf "${red}${prog_name} ${prog_vesion}${normal}"
 }
-
 
 # Main
 case $1 in
