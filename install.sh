@@ -11,8 +11,8 @@
 #
 
 declare -r red=$(tput setaf 1)
-declare -r blue=$(tput setaf 3)
 declare -r normal=$(tput sgr0)
+
 
 declare -r prog_name="MiniDeb"
 declare -r prog_vesion="0.23.7" #AAAA/MM/DD
@@ -98,7 +98,7 @@ function setup_system()
 
 function check_install()
 {
-	if [[ !$DEBIAN_VERSION =~ ^`cat /etc/debian_version`$ ]]; then
+	if [[ !$debian_version =~ ^`cat /etc/debian_version`$ ]]; then
 		printf "${red}\n%s\n${normal}" "[WARNING] This script was only tested on version $DEBIAN_VERSION of debian."
 	fi
 		printf "${red}\n%s\n${normal}" "Proceed with the installation? [N/y]"
