@@ -84,6 +84,9 @@ function setup_system()
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/nitrogen.cfg
 	cp -avr ./nitrogen ~/.config
 	
+	sudo mv /usr/share/slim/themes/debian-softwaves/background.png{,.bkp}
+	sudo cp -avr background.png /usr/share/slim/themes/debian-softwaves/
+	
 	cp -avr ./.conkyrc ~/
 	cp -avr ./.gtkrc-2.0 ~/
 	cp -avrb ./.bashrc ~/
