@@ -93,7 +93,7 @@ function setup_system()
 	
 	chmod +x ~/.config/openbox/autostart.sh -v
 	
-	printf "${blue}\n%s\n${normal}" "Finished! Now you reboot the system."
+	printf "${red}\n%s\n${normal}" "Finished! Now you reboot the system."
 }
 
 function check_install()
