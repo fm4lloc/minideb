@@ -3,6 +3,10 @@
 
 Este Script automatiza a pós-instalação do Debian, implementando um sistema limpo e minimalista com o openbox;
 
+<img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-220456_1920x1080_scrot.jpg/>
+          
+<img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-220625_1920x1080_scrot.jpg/>
+
 Atualmente testado no Debian 9.5, mas a cada nova atualização o script passara por mudanças necessárias.
 
 Para usar o script você deve instalar uma versão limpa do Debian, preferencialmente usando uma .iso netinstall, além de dispensar a instalação de sofwatres pré-definidos como qualquer ambiente de Área de Trabalho. A única coisa que vamos precisar será os "utilitários de sistema padrão", mas não é obrigatório também se quiser manter um sistema ainda mais enxuto.
