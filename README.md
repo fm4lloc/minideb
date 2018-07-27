@@ -7,7 +7,7 @@ Este Script automatiza a pós-instalação do Debian, implementando um sistema l
           
 <img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-220625_1920x1080_scrot.jpg"/>
 
-Atualmente testado no Debian 9.5, mas a cada nova atualização o script passara pelad mudanças necessárias.
+Atualmente testado no Debian 9.5, mas a cada nova atualização o script passara pelas mudanças necessárias.
 
 Para usar o script você deve instalar uma versão limpa do Debian, preferencialmente usando uma .iso netinstall, além disso, dispensar a instalação de sofwatres pré-definidos, como o caso de qualquer ambiente de Área de Trabalho. A única coisa que vamos precisar serão os "utilitários de sistema padrão", mas não é obrigatório, se quiser um sistema ainda mais enxuto eles também podem ser dispensados.
 
