@@ -9,7 +9,7 @@ Este Script automatiza a pós-instalação do Debian, implementando um sistema l
 
 Atualmente testado no Debian 9.5, mas a cada nova atualização o script passara pelas mudanças necessárias.
 
-Para usar o script você deve instalar uma versão limpa do Debian, preferencialmente usando uma .iso netinstall, além disso, dispensar a instalação de sofwatres pré-definidos, como o caso de qualquer ambiente de Área de Trabalho. A única coisa que vamos precisar serão os "utilitários de sistema padrão", mas não é obrigatório, se quiser um sistema ainda mais enxuto eles também podem ser dispensados.
+Para usar o script você deve instalar uma versão limpa do Debian, preferencialmente usando uma .iso netinstall, além disso, dispensar a instalação de sofwatres pré-definidos, como o caso de qualquer ambiente de Área de Trabalho. A única coisa que vamos precisar é os "utilitários de sistema padrão", mas não é obrigatório, se quiser um sistema ainda mais enxuto eles também podem ser dispensados.
 
 <img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-120025_1920x1080_scrot.jpg"/>
 
@@ -23,7 +23,7 @@ Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo a
 # aduser YOUR_USER sudo
 # halt --r now
 ```
-> **Depois de adicionar o seu usuário ao grupo e reinicie o sistema execute os seguintes comados:**
+> **Depois de adicionar o seu usuário ao grupo, reinicie o sistema e execute os seguintes comandos:**
 ```
 $ cd ~
 $ sudo apt-get install git
