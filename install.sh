@@ -37,9 +37,10 @@ ntfs-config)
 
 function help()
 {
-    version
+	version
 	printf "\n%s\n"\
 	"-i | --install - install packpages e copy config files."\
+	"-r | --reconfigure - copy only the configuration files."\
 	"-d | --description - show description of installed packages."\
 	"Example for install:"\
 	"Try $0 -i or $0 --install"
@@ -107,16 +108,16 @@ function check_install()
 		printf "${red}\n%s\n${normal}" "Proceed with the installation? [N/y]"
         read -n 1 -r
         if [[ $REPLY =~ ^[Yy]$ ]]; then
-            install_packpages
+		install_packpages
         else
-			printf "\nBye!"
-            exit -1
+		printf "\nBye!"
+		exit -1
         fi
 }
 
 function version()
 {
-    printf "${red}${prog_name} ${prog_vesion}${normal}"
+	printf "${red}${prog_name} ${prog_vesion}${normal}"
 }
 
 # Main
@@ -125,7 +126,8 @@ case $1 in
 		check_install
 		exit 0
 		;;
-	-r | --remove)
+	-r | --reinstall)
+		setup_system
 		exit 0
 		;;
 	-d | --description)
