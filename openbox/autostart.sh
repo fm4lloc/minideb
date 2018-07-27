@@ -1,4 +1,3 @@
-#!/bin/bash
 
 thunar --daemon &
 tint2 &&
