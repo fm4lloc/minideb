@@ -15,7 +15,7 @@ Para usar o script você deve instalar uma versão limpa do Debian, preferencial
 
 > **Modo de usar**
 
-Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo as linhas abaixo, lembrando de substituir *YOUR_USER* pelo nome do ultilizador do sistema.
+Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo as linhas abaixo, lembrando de substituir *YOUR_USER* pelo nome do utilizador do sistema.
 
 ```
 # su
