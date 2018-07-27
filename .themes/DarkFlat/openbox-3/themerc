@@ -1,0 +1,122 @@
+#  themerc
+#  
+#  Copyright 2018 fm4lloc (Fernando Magalhaes) <fm4lloc(at)gmail(dot.com)>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+
+# WINDOW
+border.width: 0
+
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 0
+
+padding.width: 10
+padding.height: 8
+window.label.text.justify: center
+window.active.border.color: #0b0b0b
+window.inactive.border.color: #0b0b0b
+window.active.title.separator.color: #0b0b0b
+window.inactive.title.separator.color: #0b0b0b
+window.active.client.color: #0b0b0b
+window.inactive.client.color: #0b0b0b
+
+window.active.label.text.color: #7b7b7b
+window.inactive.label.text.color: #7b7b7b
+
+window.active.button.unpressed.bg: parentrelative
+window.active.button.pressed.bg: parentrelative
+window.active.button.hover.bg: parentrelative
+window.active.button.disabled.bg: parentrelative
+window.active.button.toggled.unpressed.bg: parentrelative
+window.active.button.toggled.pressed.bg: parentrelative
+window.active.button.toggled.hover.bg: parentrelative
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.pressed.bg: parentrelative
+window.inactive.button.hover.bg: parentrelative
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.toggled.unpressed.bg: parentrelative
+window.inactive.button.toggled.pressed.bg: parentrelative
+window.inactive.button.toggled.hover.bg: parentrelative
+
+
+window.active.button.unpressed.image.color: #7b7b7b
+window.active.button.pressed.image.color: #878787
+window.active.button.disabled.image.color: #2d3036
+window.active.button.hover.image.color: #5e5e5e
+window.active.button.toggled.unpressed.image.color: #7b7b7b
+window.active.button.toggled.pressed.image.color: #878787
+window.active.button.toggled.hover.image.color: #5e5e5e
+window.inactive.button.unpressed.image.color: #7b7b7b
+window.inactive.button.pressed.image.color: #878787
+window.inactive.button.disabled.image.color: #2d3036
+window.inactive.button.hover.image.color: #5e5e5e
+window.inactive.button.toggled.unpressed.image.color: #7b7b7b
+window.inactive.button.toggled.pressed.image.color: #878787
+window.inactive.button.toggled.hover.image.color: #5e5e5e
+
+window.active.title.bg: flat solid
+window.active.title.bg.color: #0b0b0b
+window.active.label.bg: flat solid
+window.active.label.bg.color: #0b0b0b
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #0b0b0b
+window.inactive.label.bg: flat solid
+window.inactive.label.bg.color: #0b0b0b
+
+# MENU
+
+menu.border.width: 5
+menu.separator.width: 1
+menu.separator.padding.width: 10
+menu.separator.padding.height: 2
+
+menu.overlap.x: -5
+menu.overlap.y: 0
+
+menu.border.color: #1d1d1d
+menu.separator.color: #0b0b0b
+
+menu.title.bg: flat solid
+menu.title.bg.color: #1d1d1d
+menu.title.text.color: #7b7b7b
+menu.title.text.justify: center
+
+menu.items.bg: flat solid
+menu.items.bg.color: #1d1d1d
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #3d3d3d
+menu.items.text.color: #7b7b7b
+menu.items.disabled.text.color: #434343
+menu.items.active.text.color: #7b7b7b
+menu.items.active.disabled.text.color: #aeb0b6
+
+# OSD
+
+osd.border.width: 0
+osd.border.color: #1d1d1d
+osd.label.text.color: #7b7b7b
+osd.bg: flat solid
+osd.bg.color: #1d1d1d
+osd.label.bg: flat solid
+osd.label.bg.color: #1d1d1d
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #3d3d3d
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #0b0b0b
+
