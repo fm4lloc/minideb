@@ -99,7 +99,7 @@ function setup_system()
 function check_install()
 {
 	if [[ !$debian_version =~ ^`cat /etc/debian_version`$ ]]; then
-		printf "${red}\n%s\n${normal}" "[WARNING] This script was only tested on version $DEBIAN_VERSION of debian."
+		printf "${red}\n%s\n${normal}" "[WARNING] This script was only tested on version $debian_version of debian."
 	fi
 		printf "${red}\n%s\n${normal}" "Proceed with the installation? [N/y]"
         read -n 1 -r
