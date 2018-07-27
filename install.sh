@@ -78,6 +78,7 @@ function setup_system()
 	cp -avr ./openbox ~/.config
 	cp -avr ./geany ~/.config/
 	cp -avr ./Wallpapers ~/
+	cp -avr ./.themes ~/
 	
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/bg-saved.cfg
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/nitrogen.cfg
