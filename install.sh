@@ -71,8 +71,16 @@ function install_packpages()
 
 function setup_system()
 {
-	printf "\n${red}\n%s\n${normal}" "Downloading Halo icons:"
-	git clone https://github.com/Ampiflow/Halo ~/.icons/Halo
+	# already exists?
+	if [ -d ~/.icons/Halo ]; then
+		printf "\n${red}\n%s\n${normal}" "Search Updates for Halo icons. Wait..."
+		cd ~/.icons/Halo
+		git pull
+		cd -
+	else
+		printf "\n${red}\n%s\n${normal}" "Downloading Halo icons. Wait..."
+		git clone https://github.com/Ampiflow/Halo
+	fi
 	
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
 	cp -avr ./tint2 ~/.config
