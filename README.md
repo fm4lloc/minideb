@@ -41,5 +41,5 @@ Esses atalhos podem ser modificados no arquivo [/openbox/rc.xml](/openbox/rc.xml
 | ------------------------- |:------------------------------------:|
 | Alt+F                     | Abre o gerenciador de arquivos thunar|
 | Alt+E                     | Abre o terminal Sakura               |
-| Alt+2                     | Abre o lançador de aplicativos gmrun |
+| Alt+F2                     | Abre o lançador de aplicativos gmrun |
 | PrintScreen               | Tira foto da tela usando o scrot     |
