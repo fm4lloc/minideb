@@ -17,6 +17,11 @@
 		<separator/>
 		<menu id="client-list-menu"/>
 		<separator/>
+		<item label="ObMenu">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
 		<item label="ObConf">
 			<action name="Execute">
 				<execute>obconf</execute>
