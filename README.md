@@ -1,21 +1,21 @@
 
 **Minideb** :octocat:
 
-Este Script automatiza a pós-instalação do Debian, implementando um sistema limpo e minimalista com o Openbox;
+This script automates the post-installation of Debian, implementing a clean and minimalist system with Openbox;
 
 ![screen1](/screenshot/2018-07-27-084940_1440x900_scrot.jpg)
           
 ![screen2](/screenshot/2018-07-27-084931_1440x900_scrot.jpg)
 
-Atualmente testado no Debian 9.5, mas com atualizações para futuras versões do sistema.
+Currently tested in Debian 9.5, but with updates for future versions of the system.
 
-Para usar o script você deve instalar uma versão limpa do Debian, preferencialmente usando uma .iso netinstall, além disso, deve dispensar a instalação de sofwatres pré-definidos, como o caso de qualquer ambiente de Área de Trabalho. A única coisa que você deve instalar, opcionalmente, é os "utilitários de sistema padrão" se quiser um sistema menos cru.
+To use the script you must install a clean version of Debian, preferably using a netinstall .iso; The only thing you should install, optionally, is the "standard system utilities" if you want a less raw system.
 
 <img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-120025_1920x1080_scrot.jpg"/>
 
-> **Modo de usar**
+> **How to use**
 
-Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo as linhas abaixo, lembrando de substituir a palavra *YOUR_USER* pelo nome do utilizador do sistema.
+Before starting, add your user to the *sudo* group, remembering to replace the word *YOUR_USER* with the name of the system user.
 
 ```
 # su
@@ -23,7 +23,7 @@ Antes de iniciar os trabalhos adicione o seu usuário ao grupo *sudo* seguindo a
 # aduser YOUR_USER sudo
 # halt --r now
 ```
-> **Depois de adicionar seu usuário, reinicie o sistema e execute os seguintes comandos:**
+> **After you add your user, restart the system and run:**
 ```
 $ cd ~
 $ sudo apt-get install git
@@ -33,13 +33,13 @@ $ chmod +x ./install.sh
 $ ./install -i
 ```
 
-> **As configurações do openbox ainda contam com os seguintes atalhos de teclado:**
+> **Key shortcuts:**
 
-Esses atalhos podem ser modificados no arquivo [/openbox/rc.xml](/openbox/rc.xml)
+Shortcuts can be modified in the file: [/openbox/rc.xml](/openbox/rc.xml)
 
-| Keyboard Shortcut	        | Descrição                            |
-| ------------------------- |:------------------------------------:|
-| Alt+F                     | Abre o gerenciador de arquivos thunar|
-| Alt+E                     | Abre o terminal Sakura               |
-| Alt+F2                     | Abre o lançador de aplicativos gmrun |
-| PrintScreen               | Tira foto da tela usando o scrot     |
+| Keyboard Shortcut	        | Description                     |
+| ------------------------- |:-------------------------------:|
+| Alt+F                     | Open Thunar File Manager        |
+| Alt+E                     | Open Sakura terminal            |
+| Alt+F2                    | Open gmrun application launcher |
+| PrintScreen               | screenshot with Scrot           |
