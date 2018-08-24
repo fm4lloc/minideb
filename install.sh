@@ -14,7 +14,7 @@ declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
 
 declare -r prog_name="MiniDeb"
-declare -r prog_vesion="0.26.7" #AAAA/MM/DD
+declare -r prog_vesion="0.8.24" #AAAA/MM/DD
 
 declare -r debian_version="9.5"
 
@@ -27,7 +27,7 @@ galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa menu lxappearance
 gtk2-engines geany volumeicon-alsa alsa-utils
 gtk2-engines-murrine gnome-themes-standard hardinfo
-ntfs-config)
+ntfs-config bash-completion)
 
 # Extra Packpage
 #declare -a pkg_libreoffice=(libreoffice libreoffice-l10n-pt-br libreoffice-gtk3)
