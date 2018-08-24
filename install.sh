@@ -78,8 +78,11 @@ function setup_system()
 		git pull
 		cd -
 	else
+		mkdir -v ~/.icons/
+		cd ~/.icons/
 		printf "\n${red}\n%s\n${normal}" "Downloading Halo icons. Wait..."
 		git clone https://github.com/Ampiflow/Halo
+		cd -
 	fi
 	
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
