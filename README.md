@@ -1,7 +1,6 @@
+![logo](/minideb_logo.png)
 
 **Minideb** :octocat:
-
-![logo](/minideb_logo.png)
 
 This script automates the post-installation of Debian, implementing a clean and minimalist system with Openbox;
 
