@@ -25,8 +25,8 @@ trayer wicd-gtk nitrogen lxappearance gtk2-engines
 obsession conky sakura mirage gmrun scrot brasero
 galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa menu lxappearance
-gtk2-engines geany volumeicon-alsa alsa-utils
-gtk2-engines-murrine gnome-themes-standard hardinfo
+gtk2-engines geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
+gtk2-engines-murrine gnome-themes-standard hardinfo gparted
 ntfs-config bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant
 libreoffice libreoffice-gtk3
