@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Automate a minimalist configuration for Debian 9.5
+# Automate a minimalist configuration for Debian Streach
 #
 # Written by: Fernando Magalhães (fm4lloc) <fm4lloc(at)gmail(ot)com>
 #
@@ -14,9 +14,9 @@ declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
 
 declare -r prog_name="MiniDeb"
-declare -r prog_vesion="0.8.24" #AAAA/MM/DD
+declare -r prog_vesion="1.5.14" #AAAA/MM/DD
 
-declare -r debian_version="9.5"
+declare -r debian_version="9.9"
 
 # Base package
 declare -a pkg_base=(xorg slim openbox obconf thunar 
@@ -27,13 +27,10 @@ galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa menu lxappearance
 gtk2-engines geany volumeicon-alsa alsa-utils
 gtk2-engines-murrine gnome-themes-standard hardinfo
-ntfs-config bash-completion)
-
-# Extra Packpage
-#declare -a pkg_libreoffice=(libreoffice libreoffice-l10n-pt-br libreoffice-gtk3)
-#declare -a pkg_thunderbird=(thunderbird thunderbird-l10n-pt-br)
-#declare -a pkg_firefox=(firefox-esr firefox-esr-l10n-pt-br)
-#declare -a pkg_build_nvidia=(build-essential linux-headers-$(uname -r) module-assistant)
+ntfs-config bash-completion build-essential 
+linux-headers-$(uname -r) module-assistant
+libreoffice libreoffice-gtk3
+thunderbird)
 
 function help()
 {
@@ -60,7 +57,7 @@ function install_packpages()
 	printf "${red}%s\n${normal}" "Installing packages..."
 	sudo apt-get -y install ${pkg_base[*]}
 	
-	# BUGFIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
+	# FIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
 	#sudo apt-get -y --purge remove libgarcon-common
 	#sudo apt-get -y --purge autoremove
 	
