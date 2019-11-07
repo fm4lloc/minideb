@@ -26,8 +26,7 @@ obsession conky sakura mirage gmrun scrot brasero
 galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa menu lxappearance
 gtk2-engines geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
-gtk2-engines-murrine gnome-themes-standard hardinfo gparted
-ntfs-config bash-completion build-essential 
+gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant
 libreoffice libreoffice-gtk3
 thunderbird)
@@ -55,7 +54,8 @@ function show_description()
 function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
-	sudo apt-get -y install ${pkg_base[*]}
+	sudo apt-get update
+	sudo apt-get install ${pkg_base[*]}
 	
 	# FIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
 	#sudo apt-get -y --purge remove libgarcon-common
