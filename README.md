@@ -19,7 +19,7 @@ To use the script you must install a clean version of Debian, preferably using a
 Before starting, add your user to the *sudo* group, remembering to replace the word *YOUR_USER* with the name of the system user.
 
 ```
-# su
+# su -
 # apt-get install sudo
 # adduser YOUR_USER sudo
 # halt --r now
