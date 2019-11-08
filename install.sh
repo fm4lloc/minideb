@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Automate a minimalist configuration for Debian Streach
+# Automate a minimalist configuration for Debian Streach/Buster
 #
 # Written by: Fernando Magalhães (fm4lloc) <fm4lloc(at)gmail(ot)com>
 #
@@ -16,7 +16,7 @@ declare -r normal=$(tput sgr0)
 declare -r prog_name="MiniDeb"
 declare -r prog_vesion="1.5.14" #AAAA/MM/DD
 
-declare -r debian_version="9.9"
+declare -r debian_version="10.1"
 
 # Base package
 declare -a pkg_base=(xorg slim openbox obconf thunar 
