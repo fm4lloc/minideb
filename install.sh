@@ -14,7 +14,7 @@ declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
 
 declare -r prog_name="MiniDeb"
-declare -r prog_vesion="1.5.14" #AAAA/MM/DD
+declare -r prog_vesion="1.11.17" #AAAA/MM/DD
 
 declare -r debian_version="10.1"
 
