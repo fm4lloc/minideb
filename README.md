@@ -8,7 +8,7 @@ This script automates the post-installation of Debian, implementing a clean and 
           
 ![screen2](/screenshot/2018-07-27-084931_1440x900_scrot.jpg)
 
-Currently tested in Debian 9.9 (Streach), but with updates for future versions of the system.
+Currently tested in Debian 10.1 (Buster), but with updates for future versions of the system.
 
 To use the script you must install a clean version of Debian, preferably using a netinstall .iso; The only thing you should install, optionally, is the "standard system utilities" if you want a less raw system.
 
