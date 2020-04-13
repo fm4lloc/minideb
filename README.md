@@ -20,14 +20,14 @@ Before starting, add your user to the *sudo* group, remembering to replace the w
 
 ```
 # su -
-# apt-get install sudo
+# apt install sudo
 # adduser YOUR_USER sudo
 # halt --r now
 ```
 > **After you add your user, restart the system and run:**
 ```
 $ cd ~
-$ sudo apt-get install git
+$ sudo apt install git
 $ git clone https://github.com/fm4lloc/minideb
 $ cd minideb
 $ chmod +x ./install.sh
