@@ -14,14 +14,14 @@ declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
 
 declare -r prog_name="MiniDeb"
-declare -r prog_vesion="1.11.17" #AAAA/MM/DD
+declare -r prog_vesion="2.04.13" #AAAA/MM/DD
 
-declare -r debian_version="10.1"
+declare -r debian_version="10.3"
 
 # Base package
 declare -a pkg_base=(xorg slim openbox obconf thunar 
 thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
-trayer wicd-gtk nitrogen lxappearance gtk2-engines
+trayer wicd-gtk nitrogen lxappearance faenza-icon-theme gtk2-engines
 obsession conky sakura mirage gmrun scrot brasero
 galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa menu lxappearance
@@ -29,7 +29,7 @@ gtk2-engines geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
 gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant
 libreoffice libreoffice-gtk3
-thunderbird)
+thunderbird )
 
 function help()
 {
@@ -54,8 +54,8 @@ function show_description()
 function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
-	sudo apt-get update
-	sudo apt-get install ${pkg_base[*]}
+	sudo apt update
+	sudo apt install ${pkg_base[*]}
 	
 	# FIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
 	#sudo apt-get -y --purge remove libgarcon-common
@@ -63,25 +63,10 @@ function install_packpages()
 	
 	setup_system
 	exit 0
-	
 }
 
 function setup_system()
 {
-	# already exists?
-	if [ -d ~/.icons/Halo ]; then
-		printf "\n${red}\n%s\n${normal}" "Search Updates for Halo icons. Wait..."
-		cd ~/.icons/Halo
-		git pull
-		cd -
-	else
-		mkdir -v ~/.icons/
-		cd ~/.icons/
-		printf "\n${red}\n%s\n${normal}" "Downloading Halo icons. Wait..."
-		git clone https://github.com/Ampiflow/Halo
-		cd -
-	fi
-	
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
 	cp -avr ./tint2 ~/.config
 	cp -avr ./openbox ~/.config
