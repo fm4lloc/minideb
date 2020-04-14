@@ -19,7 +19,7 @@ declare -r prog_vesion="2.04.13" #AAAA/MM/DD
 declare -r debian_version="10.3"
 
 # Base package
-declare -a pkg_base=(xorg slim openbox obconf thunar 
+declare -a pkg_base=(xorg slim openbox obconf thunar libexo-1-0
 thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
 trayer wicd-gtk nitrogen lxappearance faenza-icon-theme gtk2-engines
 obsession conky sakura mirage gmrun scrot brasero
@@ -29,7 +29,7 @@ gtk2-engines geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
 gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant
 libreoffice libreoffice-gtk3
-thunderbird )
+thunderbird)
 
 function help()
 {
