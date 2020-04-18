@@ -14,14 +14,14 @@ declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
 
 declare -r prog_name="MiniDeb"
-declare -r prog_vesion="2.04.14" #AAAA/MM/DD
+declare -r prog_vesion="2.04.18" #AAAA/MM/DD
 
 declare -r debian_version="10.3"
 
 # Base package
 declare -a pkg_base=(xorg slim openbox obconf thunar libexo-1-0
 thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
-trayer wicd-gtk nitrogen lxappearance faenza-icon-theme gtk2-engines
+trayer wicd-gtk nitrogen lxappearance breeze-icon-theme gtk2-engines
 obsession conky sakura mirage gmrun scrot brasero
 galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa menu lxappearance
