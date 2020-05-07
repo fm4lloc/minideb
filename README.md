@@ -1,4 +1,4 @@
-![logo](/minideb_logo.png)
+![logo](/minideb_logo.png) UPDATE 07-MAI-2020
 
 **Minideb** :octocat:
 
@@ -8,11 +8,13 @@ This script automates the post-installation of Debian, implementing a clean and 
           
 ![screen2](/screenshot/2020-05-07-170543_1920x1080_scrot.png)
 
+![screen3](/screenshot/2020-05-07-172810_1920x1080_scrot.png)
+
 Currently tested in **Debian 10.3 (Buster)**, but with updates for future versions of the system.
 
 To use the script you must install a clean version of Debian, preferably using a netinstall .iso; The only thing you should install, optionally, is the "standard system utilities" if you want a less raw system.
 
-![screen2](/screenshot/DB.png)
+![screen4](/screenshot/DB.png)
 
 > **How to use**
 
