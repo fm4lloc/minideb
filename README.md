@@ -4,9 +4,9 @@
 
 This script automates the post-installation of Debian, implementing a clean and minimalist system with Openbox;
 
-![screen1](/screenshot/2018-07-27-084940_1440x900_scrot.jpg)
+![screen1](/screenshot/![screen1](2020-05-07-170543_1920x1080_scrot.png)
           
-![screen2](/screenshot/2018-07-27-084931_1440x900_scrot.jpg)
+![screen2](/screenshot/2020-05-07-170543_1920x1080_scrot.png)
 
 Currently tested in **Debian 10.3 (Buster)**, but with updates for future versions of the system.
 
