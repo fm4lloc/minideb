@@ -12,7 +12,7 @@ Currently tested in **Debian 10.3 (Buster)**, but with updates for future versio
 
 To use the script you must install a clean version of Debian, preferably using a netinstall .iso; The only thing you should install, optionally, is the "standard system utilities" if you want a less raw system.
 
-<img src="https://raw.githubusercontent.com/fm4lloc/stuff/master/2018-07-26-120025_1920x1080_scrot.jpg"/>
+![screen2](/screenshot/DB.png)
 
 > **How to use**
 
