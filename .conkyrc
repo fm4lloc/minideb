@@ -1,4 +1,12 @@
-# conkyrc (fm4lloc)
+# .Conkyrc config file to minideb
+#
+# Written by: Fernando Magalhães (fm4lloc) <fm4lloc(at)gmail(ot)com>
+#
+# This program is free software; you can REDistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
 
 #avoid flicker
 double_buffer yes
@@ -45,7 +53,13 @@ use_spacer none
 
 TEXT
 ${color2}CPU1:   ${color3}${cpu cpu1}% \
-${color2}CPU2:   ${color3}${cpu cpu2}% ${color5} | \
+${color2}CPU2:   ${color3}${cpu cpu2}% \
+${color2}CPU3:   ${color3}${cpu cpu3}% \
+${color2}CPU4:   ${color3}${cpu cpu4}% \
+${color2}CPU5:   ${color3}${cpu cpu5}% \
+${color2}CPU6:   ${color3}${cpu cpu6}% \
+${color2}CPU7:   ${color3}${cpu cpu7}% \
+${color2}CPU8:   ${color3}${cpu cpu8}% ${color5} | \
 ${color2}Ram:    ${color3}${mem}/${memmax} ${color5} | \
 ${color2}Swap:   ${color3}${swapperc}% ${color5} | \
 ${color2}Home:   ${color3}${fs_free_perc /home}% ${color4}free ${color5} | \
@@ -56,7 +70,7 @@ ${color2}Top:    ${color3} ${top name 1}${top cpu 1}${top mem 1}\
 
 
 #${color2}GPUTEMP:${color3}${execi 2 nvidia-settings -query GPUCoreTemp | perl -ne 'print $1 if /GPUCoreTemp.*?debian:0\.0.*?: (\d+)./;'} Cº
-#hddtemp
+
 #${color2}${execi 300 nc 127.0.0.1 7634}
 #${color2}/dev/sda ${diskiograph /dev/sda 8,100 ${color3} ${color2}} ${diskio /dev/sda}
 #${color2}/dev/sdb ${diskiograph /dev/sdb 8,100 ${color3} ${color2}} ${diskio /dev/sdb}
