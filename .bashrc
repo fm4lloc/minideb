@@ -71,6 +71,8 @@ man() {
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
+alias grep='grep $LS_OPTIONS'
+alias diff='diff $LS_OPTIONS'
 
 # Extract Files
 # use: $ extract file.type
