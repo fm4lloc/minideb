@@ -1,4 +1,4 @@
-![logo](/minideb_logo.png) UPDATE 07-MAI-2020
+![logo](/minideb_logo.png) UPDATE 08-MAI-2020
 
 **Minideb** :octocat:
 
