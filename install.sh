@@ -18,6 +18,8 @@ declare -r prog_vesion="2.04.18" #AAAA/MM/DD
 
 declare -r debian_version="10.3"
 
+# install libexo-1-0 to fix error "open terminal here" on thunar
+
 # Base package
 declare -a pkg_base=(xorg slim openbox obconf thunar libexo-1-0
 thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
