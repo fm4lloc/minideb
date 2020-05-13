@@ -70,7 +70,7 @@ function install_packpages()
 function setup_system()
 {
 	printf "${red}\n%s\n${normal}" "Copying configuration files:"
-	cp -avr ./tint2rc ~/.config
+	cp -avr ./tint2 ~/.config
 	cp -avr ./openbox ~/.config
 	cp -avr ./geany ~/.config/
 	cp -avr ./Wallpapers ~/
