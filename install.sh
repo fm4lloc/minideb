@@ -16,7 +16,7 @@ declare -r normal=$(tput sgr0)
 declare -r prog_name="MiniDeb"
 declare -r prog_vesion="2.05.09" #AAAA/MM/DD
 
-declare -r debian_version="10.3"
+declare -r debian_version="10.4"
 
 # install libexo-1-0 to fix error "open terminal here" on thunar
 
@@ -83,8 +83,10 @@ function setup_system()
 	sudo mv /usr/share/slim/themes/debian-softwaves/background.png{,.bkp}
 	sudo cp -avr background.png /usr/share/slim/themes/debian-softwaves/
 	
-	cp -avr ./.conkyrc ~/
+	sed -i s/YOURNAME/$(whoami)/g ./.gtkrc-2.0
 	cp -avr ./.gtkrc-2.0 ~/
+	
+	cp -avr ./.conkyrc ~/
 	cp -avrb ./.bashrc ~/
 	
 	printf "${red}\n%s\n${normal}" "Applying resolution improvement on LED / LCD screens:"
