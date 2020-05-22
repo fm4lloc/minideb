@@ -14,19 +14,17 @@ declare -r red=$(tput setaf 1)
 declare -r normal=$(tput sgr0)
 
 declare -r prog_name="MiniDeb"
-declare -r prog_vesion="2.05.13" #AAAA/MM/DD
+declare -r prog_vesion="2.05.22" #AAAA/MM/DD
 
 declare -r debian_version="10.4"
 
-# install libexo-1-0 to fix error "open terminal here" on thunar
-
 # Base package
-declare -a pkg_base=(xorg slim openbox obconf thunar libexo-1-0
+declare -a pkg_base=(xorg slim openbox obconf thunar
 thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
 trayer wicd-gtk nitrogen lxappearance breeze-icon-theme gtk2-engines
 obsession conky sakura mirage gmrun scrot
 galculator transmission-gtk audacious inkscape gimp
-chromium chromium-l10n mpv evince engrampa menu lxappearance
+chromium chromium-l10n mpv evince engrampa lxappearance
 geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
 gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant
