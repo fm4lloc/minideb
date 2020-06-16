@@ -76,6 +76,8 @@ function setup_system()
 	cp -avr ./Wallpapers ~/
 	cp -avr ./.themes ~/
 	
+	mkdir -v ~/screenshot
+	
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/bg-saved.cfg
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/nitrogen.cfg
 	cp -avr ./nitrogen ~/.config
