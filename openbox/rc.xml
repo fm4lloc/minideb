@@ -343,7 +343,7 @@
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>maim ~/screnshot/$(date +%s).png</command>
+        <command>maim ~/screenshot/$(date +%s).png</command>
       </action>
     </keybind>
   </keyboard>
