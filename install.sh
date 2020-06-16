@@ -24,7 +24,7 @@ declare -r debian_version="10.4"
 declare -a pkg_base=(xorg slim openbox obconf thunar libexo-1-0
 thunar-archive-plugin obmenu lxmenu-data openbox-menu tint2
 trayer wicd-gtk nitrogen lxappearance breeze-icon-theme gtk2-engines
-obsession conky sakura mirage gmrun scrot
+obsession conky sakura mirage gmrun maim
 galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa lxappearance
 geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
