@@ -45,4 +45,4 @@ Shortcuts can be modified in the file: [/openbox/rc.xml](/openbox/rc.xml)
 | Alt+F                     | Open Thunar File Manager        |
 | Alt+E                     | Open Sakura terminal            |
 | Alt+F2                    | Open gmrun application launcher |
-| PrintScreen               | screenshot with Scrot           |
+| PrintScreen               | screenshot with maim            |
