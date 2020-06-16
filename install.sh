@@ -77,6 +77,8 @@ function setup_system()
 	cp -avr ./.themes ~/
 	
 	mkdir -v ~/screenshot/
+	cp -avr .screenshot-maim.sh ~/
+	chmod +x ~/.screenshot-maim.sh -v
 	
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/bg-saved.cfg
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/nitrogen.cfg
