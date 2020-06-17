@@ -1,2 +1,2 @@
 #!/bin/sh
-maim ~/screenshot/$(date +%s).png
+maim ~/screenshot/screenshot-$(date +%s).png
