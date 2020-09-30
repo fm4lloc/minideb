@@ -13,7 +13,7 @@ This script automates the post-installation of Debian, implementing a clean and 
 ![screen4](/screenshot/screenshot-1601466522.png)
 
 
-Currently tested in **Debian 10.4 (Buster)**, but with updates for future versions of the system.
+Currently tested in **Debian 10.5 (Buster)**, but with updates for future versions of the system.
 
 To use the script you must install a clean version of Debian, preferably using a netinstall .iso; The only thing you should install, optionally, is the "standard system utilities" if you want a less raw system.
 
