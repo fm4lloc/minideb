@@ -54,6 +54,24 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 	}
 fi
 
+# ls colorfull using awk
+function lsd_awk ()
+{
+	str="`$@ | awk '// {printf "%s#/",$0}'`" # define delimiter
+	
+	awk -F"#/" '{
+		i = 1;
+		color = 0;
+		while(i<=NF) 
+		{
+			print "\33[38;5;" ((color=color+5)) "m" $i "\033[0m";
+			if (color > 255) 
+				color = 0
+			i++;
+		}
+	}'	<<< $str
+}
+
 # Man colors
 man() {
   env \
@@ -70,7 +88,7 @@ man() {
 # ls colors
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
-alias ls='ls $LS_OPTIONS'
+alias ls='lsd_awk ls $1'
 alias grep='grep $LS_OPTIONS'
 alias diff='diff $LS_OPTIONS'
 
