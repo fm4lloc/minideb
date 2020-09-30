@@ -69,7 +69,7 @@ function lsd_awk ()
 				color = 0
 			i++;
 		}
-	}'	<<< $str
+	}' <<< $str
 }
 
 # Man colors
