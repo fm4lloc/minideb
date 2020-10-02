@@ -54,22 +54,20 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 	}
 fi
 
-# ls colorfull using awk
+# lsd awk
 function lsd_awk ()
 {
-	str="`$@ | awk '// {printf "%s#/",$0}'`" # define delimiter
-	
-	awk -F"#/" '{
-		i = 1;
-		color = 0;
-		while(i<=NF) 
-		{
-			print "\33[38;5;" ((color=color+5)) "m" $i "\033[0m";
-			if (color > 255) 
-				color = 0
-			i++;
-		}
-	}' <<< $str
+	awk 'BEGIN {
+		color=0;
+	}
+	{
+		print "\33[38;5;" ((color=color+5)) "m" $0 "\033[0m";
+		if (color > 255) 
+			color = 0
+		color+=5;
+	}
+	END {
+	}' <<< `$@`
 }
 
 # Man colors
