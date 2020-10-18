@@ -90,6 +90,21 @@ eval "$(dircolors -b)"
 alias ls='lsd_awk ls $1'
 alias grep='grep $LS_OPTIONS'
 alias diff='diff $LS_OPTIONS'
+alias lsblk='lsd_awk lsblk $1'
+alias lscpu='lsd_awk lscpu $1'
+alias lsinitramfs='lsd_awk lsinitramfs $1'
+alias lslocks='lsd_awk lslocks $1'
+alias lsmem='lsd_awk lsmem $1'
+alias lsns='lsd_awk lsns $1'
+alias lspci='lsd_awk lspci $1'
+alias lsusb='lsd_awk lsusb $1'
+alias lsattr='lsd_awk lsattr $1'
+alias lsb_release='lsd_awk lsb_release $1'
+alias lsipc='lsd_awk lsipc $1'
+alias lslogins='lsd_awk lslogins $1'
+alias lsmod='lsd_awk lsmod $1'
+alias lsof='lsd_awk lsof $1'
+alias lspgpot='lsd_awk lspgpot $1'
 
 # Extract Files
 # use: $ extract file.type
