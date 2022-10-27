@@ -1,6 +1,6 @@
 ![logo](/minideb_logo.png) UPDATE 27-out-2022
 
-**Currently tested in Debian 11.5 (bullseye), but with updates for future versions of the system.**
+!**Currently tested in Debian 11.5 (bullseye), but with updates for future versions of the system.**
 
 **Minideb** :octocat:
 
