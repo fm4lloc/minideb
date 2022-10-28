@@ -24,7 +24,7 @@ declare -r debian_version="11.5"
 declare -a pkg_base=(xorg slim openbox obconf thunar 
 thunar-archive-plugin lxmenu-data openbox-menu tint2
 trayer nitrogen lxappearance breeze-icon-theme gtk2-engines
-obsession conky sakura mirage gmrun maim
+obsession conky sakura mirage gmrun scrot
 galculator transmission-gtk audacious inkscape gimp
 chromium chromium-l10n mpv evince engrampa lxappearance
 geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
@@ -77,8 +77,8 @@ function setup_system()
 	cp -avr ./.themes ~/
 	
 	mkdir -v ~/screenshot/
-	cp -avr .screenshot-maim.sh ~/
-	chmod +x ~/.screenshot-maim.sh -v
+	cp -avr .screenshot-scrot.sh ~/
+	chmod +x ~/.screenshot-scrot.sh -v
 	
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/bg-saved.cfg
 	sed -i s/YOURNAME/$(whoami)/g ./nitrogen/nitrogen.cfg
