@@ -59,10 +59,6 @@ function install_packpages()
 	sudo apt update
 	sudo apt install ${pkg_base[*]}
 	
-	# FIX: saída invalida do menu de processamento /etc/xdg/menus/xfce-applications.menu
-	#sudo apt-get -y --purge remove libgarcon-common
-	#sudo apt-get -y --purge autoremove
-	
 	setup_system
 	exit 0
 }
