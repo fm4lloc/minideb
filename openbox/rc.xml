@@ -343,7 +343,7 @@
     <!-- Launch maim when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>~/.screenshot-maim.sh</command>
+        <command>~/.screenshot-scrot.sh</command>
       </action>
     </keybind>
   </keyboard>
