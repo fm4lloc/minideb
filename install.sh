@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Automate a minimalist configuration for Debian Streach/Buster
+# Automate a minimalist configuration for Debian 11.5 (Bullseye)
 #
 # Written by: Fernando Magalhães (fm4lloc) <fm4lloc(at)gmail(ot)com>
 #
