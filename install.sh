@@ -57,6 +57,7 @@ function install_packpages()
 {
 	printf "${red}%s\n${normal}" "Installing packages..."
 	sudo apt update
+	sudo apt upgrade
 	sudo apt install ${pkg_base[*]}
 	
 	setup_system
