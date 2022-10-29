@@ -340,7 +340,7 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
-    <!-- Launch maim when Print is pressed -->
+    <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
         <command>~/.screenshot-scrot.sh</command>
