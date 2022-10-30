@@ -26,7 +26,7 @@ thunar-archive-plugin lxmenu-data openbox-menu tint2
 trayer nitrogen lxappearance breeze-icon-theme gtk2-engines
 obsession conky sakura mirage gmrun scrot
 galculator transmission-gtk audacious inkscape gimp
-chromium chromium-l10n mpv evince engrampa lxappearance
+firefox-esr firefox-esr-l10n-pt-br mpv evince engrampa lxappearance
 geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
 gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant dkms
