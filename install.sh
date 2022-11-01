@@ -30,8 +30,7 @@ firefox-esr firefox-esr-l10n-pt-br mpv evince engrampa lxappearance
 geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
 gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
 linux-headers-$(uname -r) module-assistant dkms
-libreoffice libreoffice-gtk3
-thunderbird)
+libreoffice libreoffice-gtk3 libreoffice-help-pt-br thunderbird)
 
 function help()
 {
