@@ -29,7 +29,7 @@ galculator transmission-gtk audacious inkscape gimp
 firefox-esr firefox-esr-l10n-pt-br mpv evince engrampa lxappearance
 geany volumeicon-alsa alsa-utils pulseaudio pavucontrol-qt
 gtk2-engines-murrine gnome-themes-standard hardinfo gparted bash-completion build-essential 
-linux-headers-$(uname -r) module-assistant dkms
+linux-headers-$(uname -r) module-assistant dkms ufw gufw
 libreoffice libreoffice-gtk3 libreoffice-help-pt-br thunderbird)
 
 function help()
@@ -93,6 +93,9 @@ function setup_system()
 	cp -avr ./.fonts.conf ~/
 	
 	chmod +x ~/.config/openbox/autostart.sh -v
+	
+	# Basic Firewall
+	sudo ufw enable
 	
 	printf "${red}\n%s\n${normal}" "Finished! Now you reboot the system."
 }
